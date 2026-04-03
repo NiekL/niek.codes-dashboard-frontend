@@ -1,0 +1,24 @@
+<header class="w-full p-3">
+  <div class="flex justify-between items-center ">
+
+    <p-breadcrumb [home]="home" [model]="items" styleClass="!bg-transparent !p-0"/>
+
+    <p-card>
+      <div class="flex items-center justify-center ">
+        <div class="flex items-center justify-center gap-2">
+          <i class="pi pi-sun"></i>
+          <p-toggleswitch [(ngModel)]="checked" (onChange)="onToggle()" />
+          <i class="pi pi-moon"></i>
+        </div>
+        <div>
+          <p-divider layout="vertical"/>
+        </div>
+        <div>
+          <p-avatar label="NL" size="large" />
+        </div>
+      </div>
+    </p-card>
+  </div>
+  <p-divider />
+</header>
+

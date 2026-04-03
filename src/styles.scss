@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use 'tailwindcss';
+@use "primeicons/primeicons.css";
+
+html{
+  body{
+    background-color: var(--p-surface-background);
+
+    .p-card .p-card-body{
+      padding:0;
+    }
+    .p-card .p-card-content {
+      padding: calc(var(--spacing) * 2);
+    }
+  }
+}
+

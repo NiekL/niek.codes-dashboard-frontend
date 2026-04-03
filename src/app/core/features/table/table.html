@@ -1,0 +1,35 @@
+<p-panel header="Test">
+  <h1 *ngIf="loading">Ladennnn</h1>
+  <h1 *ngIf="!loading">Klaarrrr</h1>
+<!--  @if(loading){-->
+<!--  <h1>Ladennnn</h1>-->
+<!--  } @else {-->
+<!--    <h1>Klaarrrr</h1>-->
+<!--  }-->
+  <p-table [value]="tableItems" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template #header>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body">
+      <tr>
+        <td><p-skeleton /></td>
+        <td><p-skeleton /></td>
+        <td><p-skeleton /></td>
+      </tr>
+    </ng-template>
+<!--      <ng-template #body let-item>-->
+<!--        <tr>-->
+<!--          <td>{{ item.id }}</td>-->
+<!--          <td>{{ item.name }}</td>-->
+<!--          <td>{{ item.description }}</td>-->
+<!--        </tr>-->
+<!--      </ng-template>-->
+<!--      <h1>TEST</h1>-->
+
+  </p-table>
+</p-panel>
+
